@@ -2,12 +2,17 @@ import React from 'react';
 import {StyleSheet, TouchableHighlight, View} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {HomeProps} from '../constants/NavigatorTypes';
 
-const MenuButton = () => {
+const MenuButton = ({navigation}: HomeProps) => {
   return (
     <TouchableHighlight onPress={() => {}}>
       <View style={styles.buttonCircle}>
-        <Icon name="menu" size={25} />
+        <Icon
+          name="menu"
+          size={25}
+          onPress={() => navigation.navigate('Menu')}
+        />
       </View>
     </TouchableHighlight>
   );

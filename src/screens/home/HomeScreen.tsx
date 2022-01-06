@@ -1,12 +1,13 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import MenuButton from '../../shared/components/MenuButton';
+import {HomeProps} from '../../shared/constants/NavigatorTypes';
 
-function HomeScreen() {
+function HomeScreen({route, navigation}: HomeProps) {
   return (
     <SafeAreaView>
       <View style={styles.homeViewStyle}>
-        <MenuButton />
+        <MenuButton navigation={navigation} route={route} />
         <Text>Home!</Text>
         <Text>네이버지도 추가 예정</Text>
       </View>
