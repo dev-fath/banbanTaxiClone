@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, TouchableHighlight, View} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const MenuButton = () => {
